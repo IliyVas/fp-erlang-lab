@@ -1,0 +1,10 @@
+-module(lab2).
+-export(export_all).
+
+page_info(URL) ->
+    case http:request(URL) of
+        {ok,{_,Headers,Body}} ->
+            Body
+        {error,Reason} -> 
+            {error,Reason}
+    end

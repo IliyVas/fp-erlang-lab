@@ -1,0 +1,14 @@
+{application, lab2,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  mochiweb_xpath
+                 ]},
+  {modules, []},
+  {mod, { lab2, []}},
+  {env, []}
+ ]}.
